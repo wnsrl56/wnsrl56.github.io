@@ -19,10 +19,10 @@ window.VUELOG_DATABASE = {
 
     // The path to route to when you visit `/`.
     // Set to `/home`, `/blog` or a valid path at your need.
-    homePath: '/home',
+    homePath: '/blog',
 
     // Whether footer is visible on `homePath` or not.
-    homeFooter: false,
+    homeFooter: true,
 
     // Vuelog interface language. Currently supports 'en-US', 'zh-CN', 'de-DE', 'pt-BR' and 'es-MX'.
     defaultLang: 'en-US',
@@ -34,7 +34,7 @@ window.VUELOG_DATABASE = {
     selectedLangs: [],
 
     // Number of posts listed in a blog/category view.
-    postsCount: 3,
+    postsCount: 15,
 
     // Fill in the shortname to integrate Disqus with your blog.
     disqusShortname: '',
@@ -51,15 +51,8 @@ window.VUELOG_DATABASE = {
       label: {
         'en-US': 'Posts',
       },
-      type: 'page',
-      path: '/page/posts'
-    },
-    {
-      label: {
-        'en-US': 'About',
-      },
-      type: 'page',
-      path: '/page/about'
+      type: 'posts',
+      path: '/blog'
     },
     {
       label: {
@@ -70,185 +63,173 @@ window.VUELOG_DATABASE = {
     },
     {
       label: {
-        'en-US': 'GitHub',
+        'en-US': 'About',
       },
-      type: 'outgoing',
-      link: 'https://github.com/wnsrl56',
+      type: 'page',
+      path: '/page/about'
     },
   ],
-
+  // {
+  //   title: {
+  //     'en-US': 'Vuelog Guide',
+  //   },
+  //   slug: 'guide',
+  //     exclude: true, // (OPTIONAL) `true` to exclude the page from archive view
+  //   titleless: false, // (OPTIONAL) `true` to hide the title in page view
+  //   commentless: false, // (OPTIONAL) `true` to disable comments for the page
+  //   draft: false // (OPTIONAL) `true` to make the page temporarily inaccessible
+  // },
   pages: [
     {
       title: {
-        'en-US': 'Vuelog Guide',
-        'zh-CN': 'Vuelog 指南',
-        'de-DE': 'Vuelog Anleitung',
-        'pt-BR': 'Guia Vuelog',
-        'es-MX': 'Guía Vuelog'
-      },
-      slug: 'guide',
-      exclude: true, // (OPTIONAL) `true` to exclude the page from archive view
-      titleless: false, // (OPTIONAL) `true` to hide the title in page view
-      commentless: false, // (OPTIONAL) `true` to disable comments for the page
-      draft: false // (OPTIONAL) `true` to make the page temporarily inaccessible
-    },
-    {
-      title: {
-        'en-US': 'About Vuelog',
-        'zh-CN': '关于 Vuelog',
-        'de-DE': 'Über Vuelog',
-        'pt-BR': 'Sobre o Vuelog',
-        'es-MX': 'Sobre Vuelog'
+        'en-US': 'About Me',
       },
       slug: 'about'
     },
-    {
-      title: {
-        'en-US': 'Changelog',
-        'zh-CN': '变更日志',
-        'de-DE': 'Änderungen',
-        'pt-BR': 'Changelog',
-        'es-MX': 'Registro de cambios'
-      },
-      slug: 'changelog'
-    }
   ],
 
   categories: [
     {
       title: {
-        'en-US': 'Documentation',
-        'zh-CN': '文档',
-        'de-DE': 'Dokumentation',
-        'pt-BR': 'Documentação',
-        'es-MX': 'Documentación'
+        'en-US': 'Java Script',
       },
-      slug: 'docs'
+      slug: 'js'
     },
     {
       title: {
-        'en-US': 'Showcase',
-        'zh-CN': '示例',
-        'de-DE': 'Beispiele',
-        'pt-BR': 'Exemplos',
-        'es-MX': 'Ejemplos'
+        'en-US': 'HTML',
       },
-      slug: 'showcase'
-    }
+      slug: 'html'
+    },
+    {
+      title: {
+        'en-US': 'Dev',
+      },
+      slug: 'dev'
+    },
+    {
+      title: {
+        'en-US': 'Log',
+      },
+      slug: 'log'
+    },
+    {
+      title: {
+        'en-US': 'Linux',
+      },
+      slug: 'linux'
+    },
+    {
+      title: {
+        'en-US': 'Dev Ops',
+      },
+      slug: 'devops'
+    },
+    {
+      title: {
+        'en-US': 'Today I Learn',
+      },
+      slug: 'til'
+    },
+    {
+      title: {
+        'en-US': 'Vue',
+      },
+      slug: 'vue'
+    },
   ],
 
   posts: [
-    /* 2017 */
+    // 2019
     {
       title: {
-        'en-US': 'Multiple languages support',
-        'zh-CN': '多语言支持',
-        'de-DE': 'Untersützung mehrerer Sprachen',
-        'pt-BR': 'Suporte a vários Idiomas',
-        'es-MX': 'Soporte multiidioma'
+        'en-US': 'heroku app을 이용한 static web 배포',
       },
-      slug: 'multiple-languages-support',
-      category: 'docs',
-      date: '2017-01-24'
+      slug: '2019-01-20-deploy-heroku',
+      category: 'devops',
+      date: '2019-01-20'
     },
     {
       title: {
-        'en-US': 'Use social commenting services',
-        'zh-CN': '使用社会化评论服务',
-        'de-DE': 'Benutzung sozialer Kommentardienste',
-        'pt-BR': 'Uso de Serviços Sociais de Comentários',
-        'es-MX': 'Uso de servicios de comentarios'
+        'en-US': '한글 인코딩에 대한 생각',
       },
-      slug: 'use-social-commenting-services',
-      category: 'docs',
-      date: '2017-01-19',
-      draft: true
+      slug: '2019-01-14-encode-hangul',
+      category: 'dev',
+      date: '2019-01-14'
     },
     {
       title: {
-        'en-US': 'Insert code blocks with syntax highlight',
-        'zh-CN': '插入语法高亮的代码块',
-        'de-DE': 'Einfügen von Code Blöcken mit Syntax Highlighting',
-        'pt-BR': 'Inserir blocos de código com realce de sintaxe',
-        'es-MX': 'Bloques de código con resaltado de sintaxis'
+        'en-US': '2018년 회고록',
       },
-      slug: 'insert-code-blocks-with-syntax-highlight',
-      category: 'docs',
-      date: '2017-01-18'
+      slug: '2019-01-04-happy-new-year-2019',
+      category: 'log',
+      date: '2019-01-04'
+    },
+    // 2018
+    {
+      title: {
+        'en-US': '새로운 platform으로 이전',
+      },
+      slug: '2018-12-22-new-blog-form',
+      category: 'log',
+      date: '2018-12-22'
     },
     {
       title: {
-        'en-US': 'Author posts or pages',
-        'zh-CN': '编写文章或页面',
-        'de-DE': 'Beiträge und Seiten verfassen',
-        'pt-BR': 'Posts ou Páginas por Autor',
-        'es-MX': 'Publicaciones de author o páginas'
+        'en-US': 'Vue 앱을 만드는 방법',
       },
-      slug: 'author-posts-or-pages',
-      category: 'docs',
-      date: '2017-01-13'
-    },
-
-    {
-      title: {
-        'en-US': 'Add posts or pages',
-        'zh-CN': '新建文章或页面',
-        'de-DE': 'Beiträge und Seiten hinzufügen',
-        'pt-BR': 'Adicionar Posts ou Páginas',
-        'es-MX': 'Agregar posts o páginas'
-      },
-      slug: 'add-posts-or-pages',
-      category: 'docs',
-      date: '2017-01-12'
+      slug: '2018-10-11-how-to-create-vue-app',
+      category: 'vue',
+      date: '2018-10-11'
     },
     {
       title: {
-        'en-US': 'Customize navigation menu',
-        'zh-CN': '自定义导航菜单',
-        'de-DE': 'Navigationsmenü anpassen',
-        'pt-BR': 'Customizar o menu de navegação',
-        'es-MX': 'Menú de navegación personalizado'
+        'en-US': 'dom Observe에 대한 생각들',
       },
-      slug: 'customize-navigation-menu',
-      category: 'docs',
-      date: '2017-01-11'
+      slug: '2018-08-02-TIL-observe',
+      category: 'html',
+      date: '2018-08-02'
     },
     {
       title: {
-        'en-US': 'Customize the site',
-        'zh-CN': '自定义站点',
-        'de-DE': 'Seite anpassen',
-        'pt-BR': 'Customizar o site',
-        'es-MX': 'Personalizar el sitio'
+        'en-US': 'object composition way',
       },
-      slug: 'customize-the-site',
-      category: 'docs',
-      date: '2017-01-10'
-    },
-    /* 2016 */
-    {
-      title: {
-        'en-US': 'File structure of Vuelog',
-        'zh-CN': 'Vuelog 文件结构',
-        'de-DE': 'Dateistruktur von Vuelog',
-        'pt-BR': 'Estrutura do Diretório do Vuelog',
-        'es-MX': 'Estructura de archivos Vuelog'
-      },
-      slug: 'file-structure-of-vuelog',
-      category: 'docs',
-      date: '2016-10-20'
+      slug: '2018-07-18-TIL-object-composition',
+      category: 'til',
+      date: '2018-07-18'
     },
     {
       title: {
-        'en-US': 'Style examples',
-        'zh-CN': '样式示例',
-        'de-DE': 'Style Beispiele',
-        'pt-BR': 'Exemplos de estilo',
-        'es-MX': 'Ejemplos de estilo'
+        'en-US': 'scp를 사용하는 방법',
       },
-      slug: 'style-examples',
-      category: 'showcase',
-      date: '2016-10-19'
-    }
+      slug: '2018-07-16-TIL-how-to-use-scp',
+      category: 'til',
+      date: '2018-07-16'
+    },
+    {
+      title: {
+        'en-US': 'you dont know js - 1',
+      },
+      slug: '2018-01-13-you-dont-know-js',
+      category: 'js',
+      date: '2018-01-13'
+    },
+    {
+      title: {
+        'en-US': '새로운 자바스크립트를 깨우치자',
+      },
+      slug: '2018-01-11-start-study-group',
+      category: 'log',
+      date: '2018-01-11'
+    },
+    // 2017
+    {
+      title: {
+        'en-US': 'dev log 시작합니다.',
+      },
+      slug: '2017-12-20-start-my-blog',
+      category: 'log',
+      date: '2017-12-20'
+    },
   ]
 }
