@@ -83,7 +83,6 @@ window.VUELOG_DATABASE = {
     {
       title: {
         'en-US': 'About Me',
-<<<<<<< HEAD
       },
       slug: 'about'
     },
@@ -93,12 +92,9 @@ window.VUELOG_DATABASE = {
     {
       title: {
         'en-US': 'Java Script',
-=======
->>>>>>> e91018d057d1e204948a7039a739fe739154d2d5
       },
       slug: 'js'
     },
-<<<<<<< HEAD
     {
       title: {
         'en-US': 'HTML',
@@ -225,80 +221,15 @@ window.VUELOG_DATABASE = {
       slug: '2018-01-11-start-study-group',
       category: 'log',
       date: '2018-01-11'
-=======
-  ],
-
-  categories: [
-    {
-      title: {
-        'en-US': 'Java Script',
-      },
-      slug: 'js'
-    },
-    {
-      title: {
-        'en-US': 'Dev',
-      },
-      slug: 'dev'
-    },
-    {
-      title: {
-        'en-US': 'Log',
-      },
-      slug: 'log'
-    },
-  ],
-
-  posts: [
-    {
-      title: {
-        'en-US': '테스트',
-      },
-      slug: 'happy-new-year-2019',
-      category: 'js',
-      date: '2019-01-04'
-    },
-    {
-      title: {
-        'en-US': '테스트',
-      },
-      slug: 'happy-new-year-2019-2',
-      category: 'js',
-      date: '2019-01-07'
-    },
-    {
-      title: {
-        'en-US': '테스트',
-      },
-      slug: 'happy-new-year-2019-3',
-      category: 'log',
-      date: '2019-01-07'
-    },
-    {
-      title: {
-        'en-US': '테스트2',
-      },
-      slug: 'ttt-1',
-      category: 'log',
-      date: '2019-01-07'
->>>>>>> e91018d057d1e204948a7039a739fe739154d2d5
     },
     // 2017
     {
       title: {
-<<<<<<< HEAD
         'en-US': 'dev log 시작합니다.',
       },
       slug: '2017-12-20-start-my-blog',
       category: 'log',
       date: '2017-12-20'
-=======
-        'en-US': '테스트2',
-      },
-      slug: 'ttt-1',
-      category: 'dev',
-      date: '2019-01-07'
->>>>>>> e91018d057d1e204948a7039a739fe739154d2d5
     },
   ]
 }
